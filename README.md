@@ -1,6 +1,6 @@
 # 2026-PCAP
 Repositório de atividades — Pensamento Computacional, Algoritmos e Programação | IFPR 2026
-👤 Estudante:Rodrigo Magagnin
+👤 Estudante: Rodrigo Magagnin
 
 📍 IFPR — Centro de Referência Ponta Grossa | 1º ano | 2026
 
