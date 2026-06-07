@@ -1,6 +1,6 @@
 '''
 Problema: beecrowd 1009
-Data: 2026/04/09
+Data: 2026.04.09
 Estudante: Rodrigo Magagnin
 '''
 #Objetivo: Ler nome, salário fixo e total de vendas; calcular e exibir o total a receber
