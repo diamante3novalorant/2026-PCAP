@@ -23,5 +23,6 @@ Cada pasta corresponde a uma aula da disciplina.
 
 - `aula-14/` — Beecrowd Parte V: exemplos resolvidos completos + autônomos sem andaime;
 
-- `aula-14/` — o 2º trimestre começa juntando os 7 pilares num jogo de verdade.
-  
+- `aula-16/` — o 2º trimestre começa juntando os 7 pilares num jogo de verdade.
+
+- 
