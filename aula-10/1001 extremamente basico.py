@@ -1,7 +1,7 @@
 
 '''
 Problema: Beecrowd - 1001
-Data: 2026/03/07
+Data: 2026.03.07
 Estudante: Rodrigo Magagnin
 '''
 #Objetivo: Ler dois inteiros em variáveis A e B e calcular a soma em X
