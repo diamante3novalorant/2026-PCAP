@@ -1,6 +1,6 @@
 '''
 Problema: Beecrowd - 1000
-Data: 2026/03/07
+Data: 2026.03.07
 Estudante: Rodrigo Magagnin
 '''
 #Objetivo: Exibir a Mensagem "Hello World!" Na tela
