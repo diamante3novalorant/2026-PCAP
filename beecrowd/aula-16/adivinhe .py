@@ -16,7 +16,7 @@ def jogar(maximo, chances):
         palpite = int(input(f"Seu palpite (1 a {maximo}): "))
 
         if palpite == numero_secreto:
-            print("Parabéns Você venceu!.")
+            print("Parabéns Você venceu!!")
             return True  # termina o nível
         elif palpite < numero_secreto:
             print("Muito baixo!!")
@@ -26,7 +26,7 @@ def jogar(maximo, chances):
         chances -= 1
         print("Chances restantes:", chances)
     
-    print(f"Fim de jogo! O número secreto era {numero_secreto}.")
+    print(f"Fim de jogo! O número secreto era {numero_secreto}!!")
     return False  # nao ganhou
 
 # Lista de níveis: [nome, máximo, chances]
