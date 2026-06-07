@@ -1,6 +1,6 @@
 '''
 Problema: beecrowd 1017
-Data: 2026/05/07
+Data: 2026.05.07
 Estudante: Rodrigo Magagnin
 '''
 
