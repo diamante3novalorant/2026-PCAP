@@ -1,6 +1,6 @@
 '''
 Problema: beecrowd 1002
-Data: 2026/03/07
+Data: 2026.03.07
 Estudante: Rodrigo Magagnin
 '''
 #Objetivo: Calcular o raio de uma esfera
