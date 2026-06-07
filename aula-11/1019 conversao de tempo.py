@@ -1,6 +1,6 @@
 '''
 Problema: beecrowd 1019
-Data: 2026/04/09
+Data: 2026.04.09
 Estudante: Rodrigo Magagnin
 '''
 
