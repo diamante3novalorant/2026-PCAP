@@ -26,7 +26,7 @@ def jogar(maximo, chances):
         chances -= 1
         print("Chances restantes:", chances)
     
-    print(f"Fim de jogo! O número era {numero_secreto}.")
+    print(f"Fim de jogo! O número secreto era {numero_secreto}.")
     return False  # nao ganhou
 
 # Lista de níveis: [nome, máximo, chances]
@@ -41,7 +41,6 @@ for nivel in niveis:
     print(f"Nível: {nivel[0]} (1 a {nivel[1]}, {nivel[2]} chances)")
     venceu = jogar(nivel[1], nivel[2])
     if not venceu:
-        print("Você perdeu! Fim de jogo.")
         break
 else:
     print("Parabéns! Você venceu todos os níveis!")
