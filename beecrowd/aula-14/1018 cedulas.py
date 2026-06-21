@@ -1,7 +1,7 @@
 '''
 Problema: beecrowd 1018
 Data: 2026.05.14
-Estudante: Rodrigo Magagnin
+Estudante: Rodrigo Magagnin 
 '''
 
 #Objetivo: Ler um valor monetário e decompô-lo no MENOR número possível
