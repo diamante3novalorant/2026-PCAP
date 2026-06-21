@@ -1,7 +1,7 @@
 '''
 Problema: beecrowd 1012
 Data: 2026.05.07
-Estudante: Rodrigo Magagnin
+Estudante: Rodrigo Magagnin 
 '''
 
 #Objetivo: Escrever um programa que leia três valores de dupla precisão A, B e C que deve calcular e mostrar: a área do triângulo retângulo, a área do circulo de Raio C 
