@@ -5,8 +5,8 @@ O computador sorteia um número e você tenta descobrir dentro de um
 limite de chances. Tem 3 níveis: Fácil, Médio e Impossível.
 ​
 ## ▶️ Como jogar
-1. Abra o terminal na pasta do jogo.
-2. Rode: python adivinhe.py
+1. Abra o terminal na pasta do jogo;
+2. Rode: python adivinhe.py;
 3. Execute o jogo e vá passando os níveis!
 ​
 ## 🎚️ Níveis
