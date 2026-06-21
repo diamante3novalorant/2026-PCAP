@@ -1,8 +1,8 @@
 # Disciplina : Pensamento Computacional, Algoritmos e Programação (PCAP)
 # Projeto : Jogo "Pedra-Papel-Tesoura"
 # Arquivo : ppt.py
-# Autor : [SEU NOME AQUI]
-# Data : [DATA DE HOJE]
+# Autor : Rodrigo Magagnin
+# Data : 2026.06.21
 
 import random
 
