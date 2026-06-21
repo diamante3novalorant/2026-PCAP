@@ -44,4 +44,4 @@ for nivel in niveis:
         print("Você perdeu! Fim de jogo.")
         break
 else:
-    print("Parabéns! Você venceu todos os níveis!")
+    print("Parabéns! Você venceu todos os níveis!") 
