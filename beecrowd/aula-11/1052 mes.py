@@ -1,7 +1,7 @@
 '''
 Problema: beecrowd 1052
 Data: 2026.04.09
-Estudante: Rodrigo Magagnin
+Estudante: Rodrigo Magagnin 
 '''
 
 #Objetivo: Ler um inteiro e informar qual mês ele é
