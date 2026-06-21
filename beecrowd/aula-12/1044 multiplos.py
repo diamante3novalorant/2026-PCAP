@@ -1,7 +1,7 @@
 '''
 Problema: beecrowd 1044
 Data: 2026.04.23
-Estudante: Rodrigo Magagnin
+Estudante: Rodrigo Magagnin 
 '''
 
 #Objetivo: Ler dois valores inteiros A e B e mostrar se são múltiplos ou não
