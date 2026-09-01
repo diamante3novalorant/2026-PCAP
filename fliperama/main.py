@@ -11,21 +11,49 @@
 from telas import titulo,linha
 from adivinhe import jogar_adivinhe
 from modulos import ler_opcao
-from modulos import ler_numero
-
+from ppt import jogar_ppt
+from placar import salvar_placar, carregar_placar
+from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores
+from parimpar import jogar_parimpar
+NOMES_DOS_JOGOS = ['Adivinhe o Número', 'Pedra-Papel-Tesoura', 'Par ou Impar']
+vezes_jogado = carregar_placar()
+jogadores = carregar_jogadores()
+def mostrar_placar():
+    titulo('PLACAR')
+    for i in range(3):
+        print(NOMES_DOS_JOGOS[i] + ': ' + str(vezes_jogado[i]) + 'x')
+        
 NOME_DO_DONO = 'Rodz'
-OPCOES = ['0', '1']
+OPCOES = ['0', '1', '2' , '3', '4']
 
 while True:
     titulo(f'Fliperama do {NOME_DO_DONO} 🤑')
-    print('1- Jogo Adivinhe o Número')
-    print('0 - Sair do fliperama')
+    print('[4] - Jogadores')
+    print('[3] - Jogo Par ou ímpar')
+    print('[2] - Jogo Pedra, Papel, Tesoura')
+    print('[1] - Jogo Adivinhe o Número')
+    print('[0] - Sair do fliperama')
     linha()
     opcao = ler_opcao('Escolha uma opção', OPCOES)
 
     if opcao == '0':
-        print('Até a Próxima!')
+        mostrar_placar()
+        salvar_placar(vezes_jogado)
+        salvar_jogadores(jogadores)
+        titulo('Até a Próxima!')
         break
-    elif opcao == '1':
-        linha()
-        jogar_adivinhe()
+    if opcao == '4':
+        menu_jogadores(jogadores)
+    else:    
+        indice = int(opcao) - 1
+        vezes_jogado[indice] = vezes_jogado[indice] + 1
+        if opcao =='1':
+            jogar_adivinhe()
+        elif opcao == '2':
+            jogar_ppt()
+        elif opcao == '4':
+            jogar_parimpar()        
+
+input('Pressione Enter para voltar ao menu...')
+
+    

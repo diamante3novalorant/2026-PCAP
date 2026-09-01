@@ -1,13 +1,4 @@
-#=======================================================================
-# Disciplina : Pensamento Computacional, Algoritmos e Programação (PCAP)
-# Projeto : Jogo "Fliperama"
-# Aula : 20
-# Arquivo : adivinhe.py
-# Autor : Rodrigo Magagnin
-# Data : 2026.08.04
-# Conceitos : 
-#=================================================================
-
+'A'
 from random import randint
 from telas import titulo, linha
 from modulos import ler_numero
