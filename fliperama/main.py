@@ -5,7 +5,7 @@
 # Arquivo : main.py
 # Autor : Rodrigo Magagnin
 # Data : 2026.08.04
-# Conceitos : 
+# Conceitos : é o cérebro do jogo, tudo começa aqui
 #======================================================================
 # Importar funções de arquivos (módulos)
 from telas import titulo,linha

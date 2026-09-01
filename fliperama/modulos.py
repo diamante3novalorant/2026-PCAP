@@ -5,7 +5,7 @@
 # Arquivo : modulos.py
 # Autor : Rodrigo Magagnin
 # Data : 2026.08.04
-# Conceitos : 
+# Conceitos : são as lógicas do fliperama
 #=================================================================
 def ler_opcao(mensagem,validas):
     resposta = input(mensagem + ": ").strip().upper()

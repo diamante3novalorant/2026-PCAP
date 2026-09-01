@@ -1,6 +1,6 @@
 #====================================================================
 #ARQUIVO          : placar.py (pasta fliperama)
-#Conceitos        : Arquio de texto, mode de abertura , write, close
+#Conceitos        : Arquivo de texto, mode de abertura , write, close
 #====================================================================
 from os.path import exists
 

@@ -5,7 +5,7 @@
 # Arquivo : telas.py
 # Autor : Rodrigo Magagnin
 # Data : 2026.08.04
-# Conceitos : 
+# Conceitos : parte visual do fliperama
 #=======================================================================
 
 # Definição da moldura Caracteres e tamnho

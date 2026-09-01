@@ -5,7 +5,8 @@
 # Arquivo : ppt.py
 # Autor : Rodrigo Magagnin
 # Data : 2026.08.11
-# Conceitos : 
+# Conceitos : jogo pedra papel tesoura, nele o jogador deve tentar 
+# vencer da máquina dizendo se quer pedra, papel ou tesoura.
 #======================================================================
 #sorteia um numero aleatorio
 from random import randint

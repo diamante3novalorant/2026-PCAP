@@ -1,11 +1,13 @@
 #=======================================================================
 # Disciplina : Pensamento Computacional, Algoritmos e Programação (PCAP)
 # Projeto : Jogo "Fliperama"
-# Aula : 20
+# Aula : 23
 # Arquivo : parimpar.py
 # Autor : Rodrigo Magagnin
-# Data : 2026.08.18
-# Conceitos : 
+# Data : 2026.09.01
+# Conceitos : Jogo par ou impar, nele o jogador deve escolher um numero
+# e depois dizer se quer par ou impar, para vencer a soma final deve ser
+# o resuiltado de sua escolha, seja ela par ou impar
 #======================================================================
 from modulos import ler_opcao
 from telas import titulo, linha
