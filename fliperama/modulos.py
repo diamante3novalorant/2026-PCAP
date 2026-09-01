@@ -8,10 +8,10 @@
 # Conceitos : 
 #=================================================================
 def ler_opcao(mensagem,validas):
-    resposta = input(mensagem + ": ").strip()
+    resposta = input(mensagem + ": ").strip().upper()
     while resposta not in validas:
         print("Opção inválida! Tenta de novo.")
-        resposta = input(mensagem + ": ").strip()
+        resposta = input(mensagem + ": ").strip().upper()
     return resposta
 
 def ler_numero(mensagem, minimo, maximo):
