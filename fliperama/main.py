@@ -15,7 +15,7 @@ from ppt import jogar_ppt
 from placar import salvar_placar, carregar_placar
 from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores, buscar
 from parimpar import jogar_parimpar
-
+from meujogo import jogar_forca
 NOMES_DOS_JOGOS = ['Adivinhe o Número', 'Pedra-Papel-Tesoura', 'Par ou Impar']
 
 vezes_jogado = carregar_placar()
@@ -26,11 +26,12 @@ def mostrar_placar():
         print(NOMES_DOS_JOGOS[i] + ': ' + str(vezes_jogado[i]) + 'x')
         
 NOME_DO_DONO = 'Rodz'
-OPCOES = ['0', '1', '2' , '3', '4']
+OPCOES = ['0', '1', '2' , '3', '4','5']
 
 while True:
     titulo(f'Fliperama do {NOME_DO_DONO} 🤑')
-    print('[4] - Jogadores')
+    print('[5] - Jogadores')
+    print('[4] - Meu jogo')
     print('[3] - Jogo Par ou ímpar')
     print('[2] - Jogo Pedra, Papel, Tesoura')
     print('[1] - Jogo Adivinhe o Número')
@@ -48,7 +49,7 @@ while True:
 
         break
 
-    if opcao == '4':
+    if opcao == '5':
         menu_jogadores(jogadores)
 
     else:
@@ -72,4 +73,6 @@ while True:
             elif opcao == '3':
                 jogar_parimpar()
 
+            elif opcao == '4':
+                jogar_forca()
             input('Pressione Enter para voltar ao menu...')

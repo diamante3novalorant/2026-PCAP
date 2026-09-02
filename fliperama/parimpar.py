@@ -31,7 +31,7 @@ def jogar_parimpar():
 
         jogador = int(numero_jogador)
 
-        escolha = ler_opcao('Você escolhe PAR ou ÍMPAR',['PAR','par' 'ÍMPAR','impar', 'ímpar','IMPAR'])
+        escolha = ler_opcao('Você escolhe PAR ou ÍMPAR',['PAR','par', 'ÍMPAR','impar', 'ímpar','IMPAR'])
 
         if escolha == 'IMPAR': 
             escolha == 'ÍMPAR'
