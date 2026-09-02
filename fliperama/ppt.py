@@ -31,7 +31,7 @@ def mostrar_jogadas():
     linha()
 
 def jogar_ppt():
-    titulo('PEDRA - PAPEL -TESOURA')
+    titulo('PEDRA - PAPEL - TESOURA')
 
     pontos_jogador = 0
     pontos_maquina = 0

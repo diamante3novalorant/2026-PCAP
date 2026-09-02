@@ -5,7 +5,7 @@
 from os.path import exists
 
 ARQUIVO = 'placar.csv'
-NOMES = ['Adivinhe o Numero', 'Pedra-Papel-Tesoura','Par ou Impar']
+NOMES = ['Adivinhe o Numero', 'Pedra-Papel-Tesoura','Par ou Impar','Jogo da Forca']
 
 def salvar_placar(vezes):
     arquivo = open(ARQUIVO, 'w')

@@ -16,17 +16,21 @@ from placar import salvar_placar, carregar_placar
 from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores, buscar
 from parimpar import jogar_parimpar
 from meujogo import jogar_forca
-NOMES_DOS_JOGOS = ['Adivinhe o Número', 'Pedra-Papel-Tesoura', 'Par ou Impar']
+NOMES_DOS_JOGOS = ['Adivinhe o Número', 'Pedra-Papel-Tesoura', 'Par ou Impar','Jogo da Forca']
 
 vezes_jogado = carregar_placar()
+
+while len(vezes_jogado) < len(NOMES_DOS_JOGOS):
+    vezes_jogado.append(0)
+
 jogadores = carregar_jogadores()
 def mostrar_placar():
     titulo('PLACAR')
-    for i in range(3):
+    for i in range(len(NOMES_DOS_JOGOS)):
         print(NOMES_DOS_JOGOS[i] + ': ' + str(vezes_jogado[i]) + 'x')
         
 NOME_DO_DONO = 'Rodz'
-OPCOES = ['0', '1', '2' , '3', '4','5']
+OPCOES = ['0', '1', '2', '3', '4','5']
 
 while True:
     titulo(f'Fliperama do {NOME_DO_DONO} 🤑')
