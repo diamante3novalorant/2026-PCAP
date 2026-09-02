@@ -35,7 +35,7 @@ OPCOES = ['0', '1', '2', '3', '4','5']
 while True:
     titulo(f'Fliperama do {NOME_DO_DONO} 🤑')
     print('[5] - Jogadores')
-    print('[4] - Meu jogo')
+    print('[4] - Jogo da Forca (Meu jogo)')
     print('[3] - Jogo Par ou ímpar')
     print('[2] - Jogo Pedra, Papel, Tesoura')
     print('[1] - Jogo Adivinhe o Número')

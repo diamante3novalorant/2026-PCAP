@@ -22,4 +22,8 @@ main.py: O arquivo que dá vida ao jogo, nele encontram-se todas as funções cr
 telas.py: Ferramentas visuais.
 modulos.py: As ferramentas lógicas.
 
+# AUTOAVALIAÇÃO
+
+eu acredito que mereço um C pelo meu trabalho, visto que fiz todas as propostas pedidas pelo professor e mais algumas outras coisas bem simples
+no mais tudo funciona e acredito que mereço essa nota.
 
