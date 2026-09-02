@@ -27,3 +27,6 @@ modulos.py: As ferramentas lógicas.
 eu acredito que mereço um C pelo meu trabalho, visto que fiz todas as propostas pedidas pelo professor e mais algumas outras coisas bem simples
 no mais tudo funciona e acredito que mereço essa nota.
 
+# IA
+Sim, usei um pouco de IA na parte do meu jogo em algumas coisas que eu tinha um pouco de dúvidas,
+porém garanto que sei de tudo que escrevi e pra que serve no código.
