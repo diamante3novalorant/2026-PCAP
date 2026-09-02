@@ -13,7 +13,7 @@ from adivinhe import jogar_adivinhe
 from modulos import ler_opcao
 from ppt import jogar_ppt
 from placar import salvar_placar, carregar_placar
-from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores, buscar
+from jogadores import menu_jogadores, salvar_jogadores, carregar_jogadores, buscar, registrar_partida
 from parimpar import jogar_parimpar
 from meujogo import jogar_forca
 NOMES_DOS_JOGOS = ['Adivinhe o Número', 'Pedra-Papel-Tesoura', 'Par ou Impar','Jogo da Forca']
@@ -57,16 +57,14 @@ while True:
         menu_jogadores(jogadores)
 
     else:
-        apelido = input('Digite o apelido do jogador: ').strip().lower()
-        i = buscar(jogadores, apelido)
-        if i == -1:
-            print('Jogador não encontrado.')
-
-        else:
             indice = int(opcao) - 1
             vezes_jogado[indice] = vezes_jogado[indice] + 1
-            jogadores[i][2] = str(int(jogadores[i][2]) + 1)
-            print('Partida registrada para ' + jogadores[i][1] + '.')
+            jogador = registrar_partida(jogadores)
+            if jogador == -1:
+                continue
+
+            salvar_placar(vezes_jogado)
+            salvar_jogadores(jogadores)
 
             if opcao == '1':
                 jogar_adivinhe()

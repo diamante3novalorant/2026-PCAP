@@ -121,6 +121,28 @@ def carregar_jogadores():
 
     return lidos
 
+def registrar_partida(jogadores):
+    if len(jogadores) == 0:
+        print('Nenhum jogador cadastrado.')
+        print('Cadastre um jogador primeiro.')
+        return -1
+
+    listar(jogadores)
+
+    apelido = input('Apelido de quem vai jogar: ').strip().lower()
+
+    i = buscar(jogadores, apelido)
+
+    if i == -1:
+        print('Não achei ninguém com esse apelido.')
+        return -1
+
+    jogadores[i][2] = str(int(jogadores[i][2]) + 1)
+
+    print('Partida registrada para ' + jogadores[i][1] + '!')
+
+    return i
+
 def menu_jogadores(jogadores):
     while True:
         titulo('CADASTRO DE JOGADORES')
