@@ -52,10 +52,11 @@ def listar(jogadores):
 
 
 def buscar(jogadores, apelido):
-    # Devolve a POSIÇÃO do jogador na lsta, ou -1 se não achar.
+    apelido = apelido.strip().lower()
     for i in range(len(jogadores)):
-        if jogadores[i][0] == apelido:
-            return i
+        if jogadores[i][0].strip().lower() == apelido:
+           return i
+    return -1
 
 
     return -1

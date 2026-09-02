@@ -75,4 +75,5 @@ while True:
 
             elif opcao == '4':
                 jogar_forca()
+
             input('Pressione Enter para voltar ao menu...')
