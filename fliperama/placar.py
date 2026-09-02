@@ -9,7 +9,7 @@ NOMES = ['Adivinhe o Numero', 'Pedra-Papel-Tesoura','Par ou Impar','Jogo da Forc
 
 def salvar_placar(vezes):
     arquivo = open(ARQUIVO, 'w')
-    for i in range(3):
+    for i in range(4):
         arquivo.write(NOMES[i] + ',' + str(vezes[i]) +'\n')
     arquivo.close()
 
