@@ -7,39 +7,46 @@
 # ════════════════════════════════════════════════════════════
 import random
 
-numero = random.randint(0, 5)
-pp = 0
-pm = 0
-entrada = input("Par ou Ímpar? ")
-escolha = entrada.lower().strip()
-opcoes = ["par", "impar", "ímpar"]
+def par_ou_impar():
+    """Executa uma partida de Par ou Ímpar contra o computador."""
+    print('===== PAR OU ÍMPAR =====')
 
-jogada = int(input("Escolha um Número: ")) 
-opcoesnumeros = [0, 1, 2, 3, 4, 5]
-if jogada not in opcoesnumeros and opcoes:
-    print("Jogada Inválida")
-    pm = pm + 1
-jogadamaquina = numero
-print("A máquina jogou: ", jogadamaquina)
-def soma(jogadamaquina, jogada): 
-    carambolas = (jogadamaquina + jogada) % 2
-    if carambolas == 1:
-        return "impar"
+    while True:
+        escolha = input('Escolha par ou impar: ').strip().lower()
+
+        if escolha in ['par', 'impar', 'ímpar']:
+            break
+
+        print('Escolha inválida. Digite par ou impar.')
+
+    while True:
+        try:
+            jogador = int(input('Digite um número de 0 a 10: '))
+
+            if 0 <= jogador <= 10:
+                break
+
+            print('Digite um número entre 0 e 10.')
+        except ValueError:
+            print('Digite apenas números.')
+
+    computador = random.randint(0, 10)
+    soma = jogador + computador
+
+    print(f'Tu escolheu: {escolha}')
+    print(f'Teu número: {jogador}')
+    print(f'Número do computador: {computador}')
+    print(f'Soma: {soma}')
+
+    if soma % 2 == 0:
+        resultado = 'par'
     else:
-        return "par"
-blabla = soma(jogadamaquina, jogada)
-def winner(escolha, resultado):
-    if escolha == resultado:
-        return "jogador"
-    return "maquina"
-resultado = soma(jogadamaquina, jogada)
-vencedor = winner = (escolha, resultado)
-if vencedor == "jogador":
-    print("Tu venceu")
-    pp = pp + 1
-else:
-    print("Perdeu pro bot kk")
-    pm = pm + 1
+        resultado = 'impar'
+
+    if resultado == escolha or (resultado == 'impar' and escolha == 'ímpar'):
+        print('Você ganhou!')
+    else:
+        print('O computador ganhou!')
 
 
-    
+par_ou_impar()
