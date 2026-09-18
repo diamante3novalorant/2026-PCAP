@@ -20,3 +20,12 @@ def ler_numero(mensagem, minimo, maximo):
         numeros.append(str(n))
     return int(ler_opcao(mensagem, numeros))
 
+def ler_texto(mensagem):
+    """Lê um texto e não permite que o usuário deixe o campo vazio."""
+    while True:
+        texto = input(mensagem).strip()
+
+        if texto:
+            return texto
+
+        print("Campo obrigatório. Digite uma informação válida.")

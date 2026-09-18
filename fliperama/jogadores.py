@@ -1,7 +1,7 @@
 from os.path import exists
 from telas import titulo, linha
 from modulos import ler_opcao
-
+from modulos import ler_texto
 ARQUIVO = 'jogadores.csv'
 #==========================================================================================
 # Disciplina : Pensamento Computacional, Algoritmos e Programação (PCAP)
@@ -26,12 +26,16 @@ ARQUIVO = 'jogadores.csv'
 #     E o cadastro é uma lista dessas listas.
 #==========================================================================================
 
+"""Funções responsáveis pelo cadastro e gerenciamento dos jogadores."""
 
 def cadastrar(jogadores):
+
+#Cadastra um novo jogador no sistema.
+
     titulo('NOVO JOGADOR')
 
-    apelido = input('Apelido (sem espaços):').strip().lower()
-    nome = input('Nome completo: ').strip()
+    apelido = ler_texto('Apelido (sem espaços):').strip().lower()
+    nome = ler_texto('Nome completo: ').strip()
 
     novo = [apelido, nome, '0']
     jogadores.append(novo)
@@ -39,19 +43,29 @@ def cadastrar(jogadores):
     print('Jogador ' + apelido + ' cadastrado.')
     linha()
 
+
 def listar(jogadores):
+
+    # Exibe os jogadores ordenados pelo número de partidas.
+
     titulo('JOGADORES CADASTRADOS')
 
     if len(jogadores) == 0:
         print('Nenhum jogador cadastrado ainda.')
     else:
-        for jogador in jogadores:
-            print(jogador[0] + '|' + jogador[1] + '|' + jogador [2] + ' partidas')
+        jogadores.sort(key=lambda jogador: int(jogador[2]), reverse=True)
+
+        for jogador in jogadores[:10]:
+            print(jogador[0] + '|' + jogador[1] + '|' + jogador[2] + ' partidas')
+
 
     linha()
 
 
 def buscar(jogadores, apelido):
+
+# Busca os jogadores existentes
+
     apelido = apelido.strip().lower()
     for i in range(len(jogadores)):
         if jogadores[i][0].strip().lower() == apelido:
@@ -59,9 +73,10 @@ def buscar(jogadores, apelido):
     return -1
 
 
-    return -1
-
 def alterar(jogadores):
+
+# Altera os dados de um jogador já cadastrado.
+
     listar(jogadores)
 
     apelido = input('Apelido de quem vai mudar de nome: ').strip().lower()
@@ -77,6 +92,9 @@ def alterar(jogadores):
     linha()
 
 def excluir(jogadores):
+
+# Remove um jogador cadastrado no sistema.
+
     listar(jogadores)
 
     apelido = input('Apelido de quem vai sair do cadastro: ').strip().lower()
@@ -100,6 +118,9 @@ def excluir(jogadores):
 
 
 def salvar_jogadores(jogadores):
+    
+# Salva um novo jogador.
+
     arquivo = open(ARQUIVO, 'w')
 
     for jogador in jogadores:
@@ -108,6 +129,9 @@ def salvar_jogadores(jogadores):
     arquivo.close()
 
 def carregar_jogadores():
+
+# Carrega um jogador já existente.
+
     if not exists(ARQUIVO):
         return []
     arquivo = open(ARQUIVO, 'r')
@@ -122,6 +146,9 @@ def carregar_jogadores():
     return lidos
 
 def registrar_partida(jogadores):
+    
+# Registra as partidas jogadas por um jogador.
+
     if len(jogadores) == 0:
         print('Nenhum jogador cadastrado.')
         print('Cadastre um jogador primeiro.')
@@ -144,6 +171,9 @@ def registrar_partida(jogadores):
     return i
 
 def menu_jogadores(jogadores):
+
+# Mostra o menu dos jogadores dentro do jogo.
+
     while True:
         titulo('CADASTRO DE JOGADORES')
         print('[1] Cadastrar jogador')
