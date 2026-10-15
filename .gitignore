@@ -206,5 +206,14 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+beecrowd-c/*
+!beecrowd-c/*.c
+
 prog-c/*
 !prog-c/*.c
+
+*.exe
+*.out
+*.o
+*.obj
+a.out
