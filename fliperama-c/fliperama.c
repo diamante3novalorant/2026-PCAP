@@ -45,12 +45,15 @@ void ler_texto (char mensagem[], char destino[]) {
     scanf("%19s", destino);
 }
 
-int buscar (char apelidos[][TAM_APELIDO], int qtd, char procurado[]){
+int buscar(char apelidos[][TAM_APELIDO], int qtd, char procurado[]) {
     int i;
-    
-    for(i = 0; i < qtd; i++) {
-        return i;
+
+    for (i = 0; i < qtd; i++) {
+        if (strcmp(apelidos[i], procurado) == 0) {
+            return i;
+        }
     }
+
     return -1;
 }
 
@@ -58,16 +61,23 @@ int cadastrar(char apelidos[][TAM_APELIDO], int partidas[], int qtd) {
     char novo[TAM_APELIDO];
 
     titulo("NOVO JOGADOR");
-    ler_texto("Apelido (sem espacos)", novo);
+
+    if (qtd >= CAPACIDADE) {
+        printf("Limite de jogadores atingido!\n");
+        return qtd;
+    }    
+        ler_texto("Apelido (sem espacos)", novo);
 
     if (buscar(apelidos, qtd, novo) != -1) {
-       printf("Esse apelido já está cadastrado.\n");
-       return qtd; 
-    }
-
+        printf("Esse apelido já está cadastrado.\n");
+        return qtd;
+    }   
+    
     strcpy(apelidos[qtd], novo);
     partidas[qtd] = 0;
+    
     printf("Jogador %s cadastrado.\n", novo);
+
     return qtd + 1;
 }
 
