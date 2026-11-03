@@ -2,7 +2,8 @@
 * Disciplina: 2026-PCAP
 * Projeto   : fliperama em C
 * Autor     : Rodrigo Magagnin
-* LIAC      : Validação e yap
+* LIAC      : Menu com validação, cadastro de jogadores em vetores com contagem, um jogo que conta
+              partidas por jogador e o cadastro salvo em arquivo na saida e relido na entrada
 */
 
 #include <stdio.h>
