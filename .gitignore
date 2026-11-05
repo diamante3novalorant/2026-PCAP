@@ -224,5 +224,5 @@ fliperama-c/*
 !fliperama-c/*.MD
 
 
-prog-cpp/*
-!prog-cpp/*.cpp
+beecrowd-cpp/*
+!beecrowd-cpp/*.cpp
