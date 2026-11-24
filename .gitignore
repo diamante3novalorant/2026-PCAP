@@ -226,3 +226,8 @@ fliperama-c/*
 
 beecrowd-cpp/*
 !beecrowd-cpp/*.cpp
+
+fliperama-cpp/*
+!fliperama-cpp/*.cpp
+!fliperama-cpp/*.csv
+!fliperama-cpp/*.MD
